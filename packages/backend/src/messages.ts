@@ -31,7 +31,6 @@ export default {
   add_to_workspace: "Open the project in a multi-root workspace",
   open_in_a_new_workspace: "Open the project in a stand-alone folder",
   create_and_close: "Create the project and close it for future use",
-  all_generators_have_been_installed: "All generators have been installed, enjoy your work!",
   generators_are_being_installed: "Generators are being installed in the background...",
   set_default_location: (defaultLocation: string) => `Set generators install location to ${defaultLocation}`,
   change_owner_for_global: (globalNpmPath: string) =>
@@ -39,4 +38,6 @@ export default {
   no_write_access: (globalNpmPath: string) =>
     `You do not have write access to directory "${globalNpmPath}". Choose one of the following:`,
   changing_owner_permissions: (globalNpmPath: string) => `Changing permissions of "${globalNpmPath}" folder...`,
+  timeout_install_generators:
+    "Some generators were not installed. You can continue to work in SAP Business Application Studio and we will retry next time you restart the dev space.",
 };
